@@ -9,8 +9,30 @@
     tools:context="com.cdoss.tutoriallearningsuite.SplashActivity$PlaceholderFragment" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/splash_test" />
+        android:text="@string/app_name"
+        android:textSize="36sp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/created_by"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="40dp"
+        android:text="@string/developer"
+        android:textSize="24sp" />
+    
 </RelativeLayout>
