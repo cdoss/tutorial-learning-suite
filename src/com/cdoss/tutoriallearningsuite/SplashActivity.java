@@ -3,6 +3,7 @@ package com.cdoss.tutoriallearningsuite;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,6 +14,8 @@ import android.os.Build;
 
 public class SplashActivity extends ActionBarActivity {
 
+	private int splashTimer = 5;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,26 +25,23 @@ public class SplashActivity extends ActionBarActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.splash, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+		
+		Thread splashscreen = new Thread() {
+			public void run() {
+				try{
+					sleep(splashTimer * 1000);
+					
+					Intent i = new Intent(getBaseContext(), MainActivity.class);
+					startActivity(i);
+					
+					finish();
+				} catch (Exception e){
+					System.out.println(e);
+				}
+			}
+		};
+		
+		splashscreen.start();
 	}
 
 	/**
