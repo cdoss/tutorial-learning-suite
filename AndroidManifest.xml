@@ -26,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.cdoss.tutoriallearningsuite.lessonone.LessonOneActivity"
+            android:label="@string/title_activity_lesson_one" >
+        </activity>
     </application>
 
 </manifest>

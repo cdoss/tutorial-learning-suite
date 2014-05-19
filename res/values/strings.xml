@@ -8,5 +8,6 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="created_by">By:</string>
     <string name="developer">Chandy Doss</string>
+    <string name="title_activity_lesson_one">LessonOneActivity</string>
 
 </resources>
