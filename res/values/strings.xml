@@ -9,5 +9,10 @@
     <string name="created_by">By:</string>
     <string name="developer">Chandy Doss</string>
     <string name="title_activity_lesson_one">LessonOneActivity</string>
+    <string name="input_hint">Enter text here!</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="lesson_one__title">Simple Display Tutorial</string>
+    <string name="empty"></string>
 
 </resources>
