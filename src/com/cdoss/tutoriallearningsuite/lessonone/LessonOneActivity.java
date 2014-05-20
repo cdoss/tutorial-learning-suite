@@ -14,10 +14,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.os.Build;
 
 public class LessonOneActivity extends ActionBarActivity {
 
+	private EditText inputText;
+	private TextView outputText;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -64,6 +69,20 @@ public class LessonOneActivity extends ActionBarActivity {
 					container, false);
 			return rootView;
 		}
+	}
+	
+	public void clearText(View view){
+		inputText.setText(R.string.empty);
+		outputText.setText(R.string.empty);
+	}
+	
+	public void submitText(View view){
+		inputText = (EditText)findViewById(R.id.userInput);
+		outputText = (TextView)findViewById(R.id.dislayText);
+		
+		String input = inputText.getText().toString();
+		outputText.setText(input);
+		inputText.setText(R.string.empty);
 	}
 
 }
