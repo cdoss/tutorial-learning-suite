@@ -1,4 +1,4 @@
-package com.cdoss.tutoriallearningsuite.lessonone;
+package com.cdoss.tutoriallearningsuite.lessons;
 
 import com.cdoss.tutoriallearningsuite.R;
 import com.cdoss.tutoriallearningsuite.R.id;
@@ -72,13 +72,16 @@ public class LessonOneActivity extends ActionBarActivity {
 	}
 	
 	public void clearText(View view){
+		inputText = (EditText)findViewById(R.id.lessonOneUserInput);
+		outputText = (TextView)findViewById(R.id.lessonOneDisplayText);
+		
 		inputText.setText(R.string.empty);
 		outputText.setText(R.string.empty);
 	}
 	
 	public void submitText(View view){
-		inputText = (EditText)findViewById(R.id.userInput);
-		outputText = (TextView)findViewById(R.id.dislayText);
+		inputText = (EditText)findViewById(R.id.lessonOneUserInput);
+		outputText = (TextView)findViewById(R.id.lessonOneDisplayText);
 		
 		String input = inputText.getText().toString();
 		outputText.setText(input);

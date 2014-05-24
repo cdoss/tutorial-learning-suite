@@ -15,7 +15,7 @@ import android.os.Build;
 
 public class SplashActivity extends ActionBarActivity {
 
-	private int splashTimer = 5;
+	private int splashTimer = 3;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

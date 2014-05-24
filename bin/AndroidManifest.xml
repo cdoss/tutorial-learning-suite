@@ -27,8 +27,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cdoss.tutoriallearningsuite.lessonone.LessonOneActivity"
+            android:name="com.cdoss.tutoriallearningsuite.lessons.LessonOneActivity"
             android:label="@string/title_activity_lesson_one" >
+        </activity>
+        <activity
+            android:name="com.cdoss.tutoriallearningsuite.lessons.LessonTwoActivity"
+            android:label="@string/title_activity_lesson_two" >
         </activity>
     </application>
 

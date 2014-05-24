@@ -1,9 +1,13 @@
-package com.cdoss.tutoriallearningsuite;
+package com.cdoss.tutoriallearningsuite.lessons;
+
+import com.cdoss.tutoriallearningsuite.R;
+import com.cdoss.tutoriallearningsuite.R.id;
+import com.cdoss.tutoriallearningsuite.R.layout;
+import com.cdoss.tutoriallearningsuite.R.menu;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,14 +16,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-import com.cdoss.tutoriallearningsuite.lessons.*;
-
-public class MainActivity extends ActionBarActivity {
+public class LessonTwoActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_lesson_two);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -31,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.lesson_two, menu);
 		return true;
 	}
 
@@ -58,27 +60,10 @@ public class MainActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
+			View rootView = inflater.inflate(R.layout.fragment_lesson_two,
+					container, false);
 			return rootView;
 		}
 	}
-	
-	public void loadLessonOne(View view){
-		try{
-			Intent i = new Intent(getBaseContext(), LessonOneActivity.class);
-			startActivity(i);
-		} catch (Exception e){
-			System.out.println(e);
-		}
-	}
 
-	public void loadLessonTwo(View view){
-		try {
-			Intent i = new Intent(this, LessonTwoActivity.class);
-			startActivity(i);
-		} catch (Exception e){
-			System.out.println(e);
-		}
-	}
 }

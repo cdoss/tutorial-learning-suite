@@ -14,5 +14,11 @@
     <string name="clear">Clear</string>
     <string name="lesson_one__title">Simple Display Tutorial</string>
     <string name="empty"></string>
+    <string name="title_activity_lesson_two">LessonTwoActivity</string>
+    <string name="lesson_one_button">Lesson 1</string>
+    <string name="lesson_two_button">Lesson 2</string>
+    <string name="main_lessons">Lessons</string>
+    <string name="lesson_one_description">Display text inputted from user</string>
+    <string name="lesson_two_description">Display text inputted from user with style</string>
 
 </resources>
