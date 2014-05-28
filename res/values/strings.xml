@@ -8,17 +8,22 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="created_by">By:</string>
     <string name="developer">Chandy Doss</string>
-    <string name="title_activity_lesson_one">LessonOneActivity</string>
+    <string name="title_activity_lesson_one">Simple Display Tutorial</string>
     <string name="input_hint">Enter text here!</string>
     <string name="submit">Submit</string>
     <string name="clear">Clear</string>
-    <string name="lesson_one__title">Simple Display Tutorial</string>
     <string name="empty"></string>
-    <string name="title_activity_lesson_two">LessonTwoActivity</string>
+    <string name="title_activity_lesson_two">Advanced Display Tutorial</string>
     <string name="lesson_one_button">Lesson 1</string>
     <string name="lesson_two_button">Lesson 2</string>
     <string name="main_lessons">Lessons</string>
     <string name="lesson_one_description">Display text inputted from user</string>
     <string name="lesson_two_description">Display text inputted from user with style</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="underline">Underline</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
 
 </resources>

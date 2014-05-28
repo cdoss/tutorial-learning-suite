@@ -10,19 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.cdoss.tutoriallearningsuite.LessonOneActivity$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/lesson_one__title"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <android.support.v7.widget.Space
-        android:id="@+id/space1"
-        android:layout_width="wrap_content"
-        android:layout_height="20sp" />
-
     <EditText
         android:id="@+id/lessonOneUserInput"
         android:layout_width="match_parent"
