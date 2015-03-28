@@ -20,7 +20,7 @@ import android.os.Build;
 
 public class LessonOneActivity extends ActionBarActivity {
 
-	private EditText inputText;
+	private EditText inputText1;
 	private TextView outputText;
 	
 	@Override
@@ -72,20 +72,20 @@ public class LessonOneActivity extends ActionBarActivity {
 	}
 	
 	public void clearText(View view){
-		inputText = (EditText)findViewById(R.id.lessonOneUserInput);
+		inputText1 = (EditText)findViewById(R.id.lessonOneUserInput);
 		outputText = (TextView)findViewById(R.id.lessonOneDisplayText);
 		
-		inputText.setText(R.string.empty);
+		inputText1.setText(R.string.empty);
 		outputText.setText(R.string.empty);
 	}
 	
 	public void submitText(View view){
-		inputText = (EditText)findViewById(R.id.lessonOneUserInput);
+		inputText1 = (EditText)findViewById(R.id.lessonOneUserInput);
 		outputText = (TextView)findViewById(R.id.lessonOneDisplayText);
 		
-		String input = inputText.getText().toString();
+		String input = inputText1.getText().toString();
 		outputText.setText(input);
-		inputText.setText(R.string.empty);
+		inputText1.setText(R.string.empty);
 	}
 
 }
